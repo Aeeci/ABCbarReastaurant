@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+	<title>ABC Bar and Restaurant</title>
+	<script language="javascript" src="jquery-2.1.4.min.js"></script>
+
+	<script language="javascript" src="abcbarandrestaurant.js"></script>
+
+	<link rel="stylesheet" href="abcbarandrestaurant.css"></link>
+
+</head>
+<body>
+<h1>ABC Bar and Restaurant</h1>
+<br>
+<div id="menubox"> 
+<h2>Order</h2>
+	
+	<p>Customer Name <input type="text" id="customername"  class="infobox" /></p>
+  <p>Number <input type="text" id="customernumber"  class="infobox" /></p>
+
+	<p><input type="checkbox" id="salmoncheck" class="menucheck"/>
+    Salmon Belly (Php250) <input type="text" id="salmonquantity" class="menuquantity" disabled>
+  	</p>
+
+	<p>
+    <input type="checkbox" id="roastcheck" class="menucheck"/>
+    Roast Beef (Php300) <input type="text" id="roastquantity" class="menuquantity" disabled>
+  	</p>
+
+  	<p>
+    <input type="checkbox" id="tbonecheck" class="menucheck"/>
+    T-Bone Steak (Php280) <input type="text" id="tbonequantity" class="menuquantity" disabled>
+  	</p>
+
+  	<p>
+    <input type="checkbox" id="ribeyecheck" class="menucheck"/>
+    RibEye Steak (Php320) <input type="text" id="ribeyequantity" class="menuquantity" disabled>
+  	</p>
+
+  	<p>
+    <input type="checkbox" id="wagyucheck" class="menucheck"/>
+    Wagyu Beef (Php350) <input type="text" id="wagyuquantity" class="menuquantity" disabled>
+  	</p>
+
+<p><span class="addDis">Add-ons</span>
+   <span class="addonsbox">
+     <input type="checkbox" id="addrice" />With Rice<br>
+     <input type="checkbox" id="adddrink" />With Drinks
+   </span>
+ </p> 
+
+<br>
+
+<p><span class="addDis">Discount</span>
+  <span class="discountbox">
+      <input type="radio" name="discount" value="senior" />Senior Citizen<br>
+      <input type="radio" name="discount" value="loyalty" />Loyalty Discount<br>
+      <input type="radio" name="discount" value="birthday" />Birthday Discount<br>
+  </span> 
+</p> 
+
+<br>
+
+<p><input type="submit" value="Get Receipt" id="receiptbutton"></p>
+
+</div>
+
+<div id="receiptbox"></div>
+
+</body>
+</html> 
